@@ -69,5 +69,13 @@ The Candidate Search Application is a dynamic React project built with TypeScrip
 
  ![VSCode Badge](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
  
+## Walkthrough Video
+  A demo of the application can be found at the following link: 
 
+  ## URL Link
+  Here is the URL Link to the application: 
+
+  ## License
+  This project is licensed under the MIT license.
+  
 
