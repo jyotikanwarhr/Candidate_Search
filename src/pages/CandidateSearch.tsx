@@ -79,9 +79,42 @@ const CandidateSearch = () => {
 
       </div>
 
-
-      <button onClick={getCandidate}>Minus (Skip)</button>
-      <button onClick={saveCandidate}>Plus (Save)</button>
+    <div style={{ display: "flex", justifyContent: "center", gap: "230px", marginTop: "10px" }}>
+      <button onClick={getCandidate} style={{
+          backgroundColor: "red",
+          color: "black",
+          border: "none",
+          borderRadius: "50%",
+          width: "50px",
+          height: "50px",
+          fontSize: "40px",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "0px",
+          margin: "0px",
+          boxSizing: "border-box",
+        }}
+        >-</button>
+      <button onClick={saveCandidate}style={{
+          backgroundColor: "green",
+          color: "black",
+          border: "none",
+          borderRadius: "50%",
+          width: "50px",
+          height: "50px",
+          fontSize: "40px",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "0px",
+          margin: "0px",
+          boxSizing: "border-box",
+        }}
+        >+</button>
+    </div>
 
     
     

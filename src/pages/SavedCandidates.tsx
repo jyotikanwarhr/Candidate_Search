@@ -1,10 +1,10 @@
+import Nav from "../components/Nav";
+
 const SavedCandidates = () => {
   return (
     <>
+      <Nav />
       <h1>Potential Candidates</h1>
-
-
-
 
       {/* create table showing savedCandidates from localstorage */}
       {/* add reject button to each candidate */}
@@ -32,13 +32,38 @@ const SavedCandidates = () => {
               <td>{candidate.company}</td>
               <td>{candidate.bio}</td>
           
-              <td>
+              <td style={{ textAlign: "center", verticalAlign: "middle" }}>
+                <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+
+                }}
+                >
                 <button
                   className="btn btn-danger"
                   onClick={() => handleReject(index)}
+                  style={{
+                    backgroundColor: "red",
+                    color: "black",
+                    border: "none",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    fontSize: "20px",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: "0",
+                    margin: "0",
+                    boxSizing: "border-box",
+                  }}
                 >
-                  Reject
+                  -
                 </button>
+                </div>
               </td>
             </tr>
           ))}
