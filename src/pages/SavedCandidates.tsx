@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const SavedCandidates = () => {
   const [candidates, setCandidates] = useState(
@@ -8,7 +8,7 @@ const SavedCandidates = () => {
   // Handle reject button click
   const handleReject = (index: number) => {
     // Remove the candidate from the list
-    const updatedCandidates = candidates.filter((_, i) => i !== index);
+    const updatedCandidates = candidates.filter((_: any, i: any) => i !== index);
 
     // Update state and localStorage
     setCandidates(updatedCandidates);
