@@ -6,7 +6,10 @@ const Nav = () => {
   return (
     <ul className='nav nav-tabs'
       style={{
-        marginLeft: "-160px", 
+        width: "100%",
+        position: "absolute",
+        top: "0",
+        left: "0",
         textAlign: "left",
         display: "flex",
         justifyContent: "flex-start",

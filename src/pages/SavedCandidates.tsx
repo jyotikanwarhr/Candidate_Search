@@ -1,9 +1,23 @@
-import Nav from "../components/Nav";
+import React, { useState } from "react";
 
 const SavedCandidates = () => {
+  const [candidates, setCandidates] = useState(
+    JSON.parse(localStorage.getItem("savedCandidates") || "[]")
+  );
+
+  // Handle reject button click
+  const handleReject = (index: number) => {
+    // Remove the candidate from the list
+    const updatedCandidates = candidates.filter((_, i) => i !== index);
+
+    // Update state and localStorage
+    setCandidates(updatedCandidates);
+    localStorage.setItem("savedCandidates", JSON.stringify(updatedCandidates));
+  };
+
   return (
     <>
-      <Nav />
+
       <h1>Potential Candidates</h1>
 
       {/* create table showing savedCandidates from localstorage */}
@@ -25,7 +39,7 @@ const SavedCandidates = () => {
           {/* map through savedCandidates and create a row for each candidate */}
           {JSON.parse(localStorage.getItem("savedCandidates") || "[]").map((candidate: any, index: number) => (
             <tr key={index}>
-              <td><img style={{width: "100%"}}src={candidate.image} alt="Candidate" /></td>
+              <td className=  "image_container"><img className= "Image" style={{width: "100%"}}src={candidate.image} alt="Candidate" /></td>
               <td>{candidate.username}</td>
               <td>{candidate.location}</td>
               <td>{candidate.email}</td>
