@@ -10,6 +10,7 @@ The Candidate Search Application is a dynamic React project built with TypeScrip
   - [Technologies](#technologies)
   - [Walkthrough Video](#walkthrough-video)
   - [URL Link](#url-link)
+  - [Deployment Link] (#deployment-link)
   - [Contributing](#contributing)
   - [Contributors](#contributors)
   - [License](#license)
@@ -68,12 +69,12 @@ The Candidate Search Application is a dynamic React project built with TypeScrip
  ![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
  ![VSCode Badge](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
- 
-## Walkthrough Video
-  A demo of the application can be found at the following link: 
 
   ## URL Link
   Here is the URL Link to the application: https://github.com/jyotikanwarhr/Candidate_Search
+
+  ## Deployment Link
+  Here is the deployment Link for render: https://candidate-search-8e2e.onrender.com
 
   ## License
   This project is licensed under the MIT license.
